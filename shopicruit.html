@@ -1,0 +1,61 @@
+<!DOCTYPE html><html>
+	<head>
+		<title>Shopicruit Task</title>
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	</head>
+	<body>
+	<div class="section" style=" background-color: #ee6e73;">
+
+		<h1 class="header center-on-small-only" style="color: white">Shopicruit Task</h1>
+	</div>
+
+
+	<br/>
+
+	<center>
+
+		<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Calculate</a>
+
+	  </center>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Answer</h4>
+     
+      <p class="info" id="weight"></br>The total weight of all items is: </p>
+		<p class="info" id="sub-total">The sub-total is: $</p>
+    </div>
+   
+  </div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+		<script type="text/javascript" src="script1.js"></script>
+
+<script type="text/javascript">
+
+
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+
+
+
+  });
+
+	
+
+</script>
+
+
+	</body>
+</html>
